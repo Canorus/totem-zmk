@@ -24,7 +24,7 @@
 #define TVP2 5
 
 &mt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <70>;
   global-quick-tap;
   flavor = "tap-preferred";
   tapping-term-ms = <170>;
@@ -68,7 +68,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI SEMICOLON
     &mt LSHIFT LPAR &kp Z   &kp X       &kp C       &lt 2 V     &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RSHIFT RPAR
-                                        &kp LALT    &kp LGUI    &kp RET         &mo 1       &lt 2 SPC   &lt 3 BSPC
+                                        &kp LALT    &kp LGUI    &kp RET         &lt 1 SPC   &lt 2 LCTL  &lt 3 BSPC
                         >;
                 };
 
