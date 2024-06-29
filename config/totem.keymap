@@ -172,7 +172,7 @@ label= "TVP 1"                             ;
                 &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans
     &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans   
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                                        &kp LCTL    &kp LALT    &trans          &kp LGUI    &trans      &trans      
                         >;
                 };
 
