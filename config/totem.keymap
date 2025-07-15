@@ -40,14 +40,14 @@
         osm_lpar: osm_lpar {
             compatible = "zmk,behavior-hold-tap";
             label = "OSM_LPAR";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings = <&sk &kp>;
         };
         osm_rpar: osm_rpar {
             compatible = "zmk,behavior-hold-tap";
             label = "OSM_RPAR";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings = <&sk &kp>;
         };
