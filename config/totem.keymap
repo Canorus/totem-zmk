@@ -42,14 +42,14 @@
             label = "OSM_LPAR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LSHFT>, <&mt LSHFT LPAR>;
+            bindings = <&sk LSHFT &kp LPAR>;
         };
         osm_rpar: osm_rpar {
             compatible = "zmk,behavior-hold-tap";
             label = "OSM_RPAR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk RSFHT>, <&mt RSHFT RPAR>;
+            bindings = <&sk RSHFT &kp RPAR>;
         };
     };
      combos {
