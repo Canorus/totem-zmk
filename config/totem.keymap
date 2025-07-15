@@ -37,19 +37,31 @@
 
 / {
     behaviors {
+        sticky_lshft_wrapper: sticky_lshft_wrapper {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>;
+        };
+
+        sticky_rshft_wrapper: sticky_rshft_wrapper {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <0>;
+            bindings = <&kp RSHFT>;
+        };
+
         osm_lpar: osm_lpar { 
             compatible = "zmk,behavior-hold-tap";
             label = "OSM_LPAR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LSHFT &kp LPAR>;
+            bindings = <&sticky_lshft_wrapper &kp LPAR>;
         };
         osm_rpar: osm_rpar {
             compatible = "zmk,behavior-hold-tap";
             label = "OSM_RPAR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk RSHFT &kp RPAR>;
+            bindings = <&sticky_rshft_wrapper &kp RPAR>;
         };
     };
      combos {
