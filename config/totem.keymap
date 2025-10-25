@@ -37,32 +37,6 @@
 
 / {
     behaviors {
-        sticky_lshft_wrapper: sticky_lshft_wrapper {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT>;
-        };
-
-        sticky_rshft_wrapper: sticky_rshft_wrapper {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <0>;
-            bindings = <&kp RSHFT>;
-        };
-
-        osm_lpar: osm_lpar { 
-            compatible = "zmk,behavior-hold-tap";
-            label = "OSM_LPAR";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&sticky_lshft_wrapper &kp LPAR>;
-        };
-        osm_rpar: osm_rpar {
-            compatible = "zmk,behavior-hold-tap";
-            label = "OSM_RPAR";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&sticky_rshft_wrapper &kp RPAR>;
-        };
     };
      combos {
             compatible = "zmk,combos";
@@ -100,7 +74,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMICOLON
-    &osm_lpar   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &osm_rpar
+&mt LSHIFT LPAR &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RSHIFT RPAR
                                         &kp LALT    &kp LGUI    &lt 4 RET       &lt 1 SPC   &lt 2 TAB   &lt 3 CLCK
                         >;
                 };
