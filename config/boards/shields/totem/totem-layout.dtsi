@@ -1,6 +1,6 @@
 #include <physical_layouts.dtsi>
 
-{
+/ {
     totem_physical_layout: totem_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "TOTEM";
