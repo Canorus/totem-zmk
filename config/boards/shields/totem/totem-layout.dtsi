@@ -4,8 +4,8 @@
     totem_physical_layout: totem_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "TOTEM";
-        transform = <&default_transform>;
         kscan = <&kscan0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 106 100   78  152 (-1000)   130   202>
@@ -46,22 +46,22 @@
             , <&key_physical_attrs 106 100  887  388 (-1500)   940   438>
             , <&key_physical_attrs 106 100 1004  371       0     0     0>
             , <&key_physical_attrs 106 100 1397  323    1000  1450   373>
-            , <&key_physical_attrs 106 100 1397  323    1000  1450   373>
             ;
     };
-};
 
-/ {
     totem_position_map {
         compatible = "zmk,physical-layout-position-map";
+
         complete;
+
         totem_map: totem {
             physical-layout = <&totem_physical_layout>;
             positions
-                = < 0  1  2  3  4  5  6  7  8  9>
+                = < 0  1  2  3  4  5  6  7  8  9> 
                 , <10 11 12 13 14 15 16 17 18 19>
                 , <20 21 22 23 24 25 26 27 28 29>
-                , <31    32 33 34 35 36 37    38>;
+                , <30    32 33 34 35 36 37    38>
+                ;
         };
     };
 };
