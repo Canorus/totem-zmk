@@ -52,6 +52,8 @@
     totem_position_map {
         compatible = "zmk,physical-layout-position-map";
 
+        complete;
+
         totem_map: totem {
             physical-layout = <&totem_physical_layout>;
             positions
