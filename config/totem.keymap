@@ -29,7 +29,7 @@
 };
 
 &mt {
-  quick-tap-ms = <70>;
+  quick-tap-ms = <30>;
   global-quick-tap;
   flavor = "hold-preferred";
   tapping-term-ms = <150>;
