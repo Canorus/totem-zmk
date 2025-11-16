@@ -51,7 +51,7 @@
             wait-ms = <10>;
 			bindings = <&kp RPAR>;
         };
-	 }
+	 };
      combos {
             compatible = "zmk,combos";
             combo_esc {
