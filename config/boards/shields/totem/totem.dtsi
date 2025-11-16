@@ -35,7 +35,9 @@
         label = "KSCAN";
 		// Set time between scans to 0 (as fast as possible)
 		//debounce-scan-period-ms = <0>;
-        
+        debounce-press-ms = <1>;
+		debounce-release-ms = <1>;
+
         diode-direction = "col2row"; 
         row-gpios
             = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
