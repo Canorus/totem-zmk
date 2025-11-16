@@ -38,6 +38,20 @@
 / {
     behaviors {
     };
+	 macros {
+		 lpar_macro: lpar_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Macros without parameters use <0>
+            wait-ms = <10>;
+			bindings = <&kp LPAR>;
+        };
+		rpar_macro: rpar_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Macros without parameters use <0>
+            wait-ms = <10>;
+			bindings = <&kp RPAR>;
+        };
+	 }
      combos {
             compatible = "zmk,combos";
             combo_esc {
@@ -74,7 +88,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMICOLON
-&mt LSHIFT LPAR &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RSHIFT RPAR
+&mt LSHIFT &lpar_macro &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RSHIFT &rpar_macro
                                         &kp LALT    &kp LGUI    &lt 4 RET       &lt 1 SPC   &lt 2 TAB   &lt 3 CLCK
                         >;
                 };
