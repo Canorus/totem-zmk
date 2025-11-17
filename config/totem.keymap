@@ -31,7 +31,7 @@
 &mt {
   quick-tap-ms = <30>;
   global-quick-tap;
-  flavor = "hold-preferred";
+  flavor = "tap-preferred";
   tapping-term-ms = <150>;
 };
 
@@ -87,7 +87,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMICOLON
+               &mt LSHIFT A &kp S       &kp D      &mt LSHIFT F &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMICOLON
 &mt LSHIFT &lpar_macro &kp Z &kp X      &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH &mt RSHIFT &rpar_macro
                                         &kp LALT    &kp LGUI    &lt 4 RET       &lt 1 SPC   &kp LSHIFT	&lt 2 TAB
                         >;
