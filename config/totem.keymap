@@ -87,8 +87,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &mt LSHFT A &kp S       &kp D       &mt LSHFT F &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMICOLON
-&mt LSHFT &lpar_macro &kp Z &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH &mt RSHFT &rpar_macro
+                &mt LSHFT A &kp S       &kp D       &mt RSHFT F &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMICOLON
+&mt LSHFT LPAR  &kp Z		&kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH &mt RSHFT RPAR
                                         &kp LALT    &kp LGUI    &lt 4 RET       &lt 1 SPC  	&lt 2 TAB	&mo 3
                         >;
                 };
@@ -155,7 +155,7 @@ label= "ADJ"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃   DISC1   ┃   DISC2   ┃   DISC3   ┃  softoff  ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
+//             ┃     (     ┃           ┃           ┃     )     ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -165,7 +165,7 @@ label= "ADJ"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &trans   &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &soft_off    &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &trans      &trans      &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
+                &kp LPAR    &trans      &trans      &kp RPAR    &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
     &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans   
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
