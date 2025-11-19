@@ -29,10 +29,10 @@
 };
 
 &mt {
-  quick-tap-ms = <150>;
+  quick-tap-ms = <100>;
   global-quick-tap;
+  tapping-term-ms = <200>;
   flavor = "tap-preferred";
-  tapping-term-ms = <100>;
 };
 
 / {
@@ -41,8 +41,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FAST_MT";
             #binding-cells = <2>;
-            tapping-term-ms = <100>; // <--- The specific time setting
-            quick-tap-ms = <150>;
+			quick-tap-ms = <100>;
+            tapping-term-ms = <150>; // <--- The specific time setting
             flavor = "balanced"; // Recommended for letters
             bindings = <&kp>, <&kp>;
         };
