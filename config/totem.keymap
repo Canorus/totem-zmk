@@ -57,7 +57,7 @@
 			combo_alttab {
 				timeout-ms = <50>;
 				key-positions = <11 35>;
-				bindings = <&LALT &TAB>;
+				bindings = <&kp LALT &kp TAB>;
 			};
             //combo_tvp {
             //    timeout-ms = <100>;
