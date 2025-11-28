@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FAST_MT";
             #binding-cells = <2>;
-			quick-tap-ms = <100>;
+			//quick-tap-ms = <100>;
             tapping-term-ms = <150>; // <--- The specific time setting
             flavor = "balanced"; // Recommended for letters
             bindings = <&kp>, <&kp>;
@@ -50,8 +50,8 @@
             compatible = "zmk,behavior-hold-tap";
             label ="tap first";
             #binding-cells = <2>;
-			quick-tap-ms = <100>;
-            tapping-term-ms = <150>; // <--- The specific time setting
+			//quick-tap-ms = <100>;
+            tapping-term-ms = <100>; // <--- The specific time setting
             flavor = "tap-preferred"; // Recommended for letters
             bindings = <&kp>, <&kp>;
         };
