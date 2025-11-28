@@ -51,8 +51,8 @@
             label ="tap first";
             #binding-cells = <2>;
 			//quick-tap-ms = <100>;
-            tapping-term-ms = <100>; // <--- The specific time setting
-            flavor = "tap-preferred"; // Recommended for letters
+            tapping-term-ms = <150>; // <--- The specific time setting
+            flavor = "tap-unless-interrupted"; // Recommended for letters
             bindings = <&kp>, <&kp>;
         };
     };
