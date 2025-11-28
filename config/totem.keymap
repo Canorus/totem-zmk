@@ -65,7 +65,7 @@
             };
 			combo_alttab {
 				timeout-ms = <50>;
-				key-positions = <10 35>;
+				key-positions = <10 34>;
 				bindings = <&kp LG(TAB)>;
 			};
             //combo_tvp {
