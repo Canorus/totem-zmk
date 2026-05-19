@@ -63,11 +63,16 @@
                 key-positions = <0 1>;
                 bindings = <&kp ESC>;
             };
-	    combo_alttab {
-		timeout-ms = <50>;
-		key-positions = <10 34>;
-		bindings = <&kp LG(TAB)>;
-	    };
+	    	combo_alttab {
+				timeout-ms = <50>;
+				key-positions = <10 34>;
+				bindings = <&kp LG(TAB)>;
+	    	};
+			combo_ttab{
+				timeout-ms = <50>;
+				key-positions = <9 10>;
+				bindingss = <&kp TAB>;
+			};
             //combo_tvp {
             //    timeout-ms = <100>;
             //    key-positions = <11 12 13>;
@@ -97,8 +102,8 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &tt LSHFT A &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &fmt RSHFT SEMICOLON
-&mt LSHFT LPAR  &kp Z &kp X &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH &mt RSHFT RPAR
-                                        &kp LALT    &kp LGUI    &lt 4 RET       &lt 1 SPC   &lt 2 TAB	&mo 3
+&mt LSHFT LPAR  &kp Z &kp X &kp C       &kp V       &kp B       &kp N           &kp M       &kp COMMA   &kp DOT     &kp FSLH &mt RSHFT RPAR
+                                        &kp LCLT    &kp LALT    &mt LGUI RET	&lt 1 SPC   &lt 2 TAB	&mo 3
                         >;
                 };
 
@@ -147,10 +152,10 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp ESC     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR   &trans      &trans      &trans      &trans      &trans       
-                &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &out OUT_USB &out OUT_BLE &trans      &kp LALT    &trans      &kp RALT    &trans 
-    &kp TAB     &kp C_PP    &kp C_PREV  &kp C_NEXT  &trans      &studio_unlock          &kp COMMA   &kp BSLH    &kp BSLH    &trans      &trans      &trans     
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL_3 &bt BT_CLR   &trans        &trans      &trans      &trans      &trans       
+                &kp C_MUTE	&kp C_VOL_DN  &kp C_VOL_UP &out OUT_USB &out OUT_BLE &trans        &kp LALT    &trans      &kp RALT    &trans 
+    &kp TAB     &kp C_PP    &kp C_PREV    &kp C_NEXT   &trans    &studio_unlock  &kp COMMA     &kp BSLH    &kp BSLH    &trans      &trans      &trans     
+                                        			    &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
 
