@@ -141,7 +141,7 @@ label= "NAVI"                              ;
 label= "SYM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃    ESC    ┃   PROF1   ┃   PROF2   ┃   PROF3   ┃  BT_CLR   ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┃   PROF0   ┃   PROF1   ┃   PROF2   ┃   PROF3   ┃  BT_CLR   ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   MUTE    ┃   VOLD    ┃   VOLU    ┃  OUT_USB  ┃  OUT_BLE  ┃   ┃           ┃   LALT    ┃           ┃   RALT    ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -167,7 +167,7 @@ label= "SYM"                               ;
 label= "ADJ"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃   DISC1   ┃   DISC2   ┃   DISC3   ┃  softoff  ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
+//             ┃   DISC0   ┃   DISC1   ┃   DISC2   ┃   DISC3   ┃  softoff  ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     (     ┃           ┃           ┃     )     ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -178,10 +178,10 @@ label= "ADJ"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans   &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &soft_off    &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &kp LPAR    &trans      &trans      &kp RPAR    &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans   
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &soft_off		&trans    &kp F7      &kp F8      &kp F9      &kp F12
+                &kp LPAR    &trans      &trans      &kp RPAR    &trans          		&trans      &kp F4      &kp F5      &kp F6      &kp F11  
+    &trans      &trans      &trans      &trans      &trans      &trans          		&trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans   
+                                        &trans      &trans      &trans          		&trans      &trans      &trans      
                         >;
                 };
 
